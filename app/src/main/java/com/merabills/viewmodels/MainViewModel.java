@@ -1,15 +1,14 @@
 package com.merabills.viewmodels;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.content.Context;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.hilt.lifecycle.ViewModelInject;
 import androidx.lifecycle.LifecycleOwner;
 import androidx.lifecycle.MutableLiveData;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModel;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -81,12 +80,12 @@ public class MainViewModel extends ViewModel implements OnAddPaymentListener, On
         if (paymentArrayList == null) {
             paymentArrayList = new ArrayList<>();
         }
-        /*if (!fileManager.isPaymentTypeAvailable(paymentArrayList, payment.getPaymentType())) {
+        if (!fileManager.isPaymentTypeAvailable(paymentArrayList, payment.getPaymentType())) {
             paymentArrayList.add(payment);
             payments.setValue(paymentArrayList);
         } else {
-            Snackbar.make(((Activity) context).getWindow().getDecorView().getRootView(), "You can't add same payment type transaction.", Snackbar.LENGTH_SHORT).show();
-        }*/
+            Toast.makeText(context, "You can't add same payment type transaction.", Toast.LENGTH_LONG).show();
+        }
 
     }
 

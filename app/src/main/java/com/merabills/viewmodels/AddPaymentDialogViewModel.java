@@ -40,7 +40,6 @@ public class AddPaymentDialogViewModel extends ViewModel {
     private final AddPaymentDialogFragment dialogFragment;
     private OnAddPaymentListener addPaymentListener;
 
-
     public AddPaymentDialogViewModel(Context context, AddPaymentDialogFragment dialog, OnAddPaymentListener listener) {
         this.dialogFragment = dialog;
         this.addPaymentListener = listener;
