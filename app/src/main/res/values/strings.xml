@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MeraBills Test</string>
+    <string name="total_amount">Total Amount = \u20B9</string>
+    <string name="rs_symbol">\u20B9</string>
+    <string name="payments">Payments</string>
+    <string name="add_payment"><u>Add Payment</u></string>
+    <string name="add_payment_title">Add Payment</string>
+    <string name="save">Save</string>
+    <string name="cash">Cash</string>
+    <string name="transfer_type">Type</string>
+    <string name="provider">Provider</string>
+    <string name="transaction_ref">Transaction reference</string>
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+    <string-array name="transfer_types">
+        <item>Cash</item>
+        <item>Bank Transfer</item>
+        <item>Credit Card</item>
+    </string-array>
+</resources>
