@@ -103,10 +103,10 @@ public class MainViewModel extends ViewModel implements OnAddPaymentListener, On
 
     public void save(View view) {
         ArrayList<Payment> paymentArrayList = this.payments.getValue();
-        if (paymentArrayList.isEmpty()) {
+        /*if (paymentArrayList.isEmpty()) {
             Snackbar.make(view, "No details found to save", Snackbar.LENGTH_SHORT).show();
             return;
-        }
+        }*/
         fileManager.addPayments(paymentArrayList);
         Snackbar.make(view, "All payment transaction has been saved.", Snackbar.LENGTH_SHORT).show();
     }
